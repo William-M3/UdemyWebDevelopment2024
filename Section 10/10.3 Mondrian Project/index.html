@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .grid{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #f0f1ec;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+      grid-template-rows: 414px 9px 130px 10px 155px 9px 20px;
+    }
+    
+    .red_box{
+      background-color: #E72F24;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .blue_box{
+      background-color: #004592;
+      grid-area: 3 / 7 / 4 / -1;
+    }
+
+    .yellow_box{
+      background-color: #F9D01E;
+      grid-area: 7 / 3 / -1 / 4;
+    }
+
+    .black_box{
+      background-color: #232629;
+      grid-area: 7 / 5;
+    }
+
+    .grid_line{
+      background-color: #000;
+    }
+
+    #long_vertical{
+      grid-area: 1 / 2 / -1 / 3;
+    }
+
+    #medium_vertical{
+      grid-area: 2 / 6 / -1;
+    }
+
+    #short_vertical{
+      grid-area: 6 / 4 / -1 ;
+    }
+
+    #long_horizontal{
+      grid-area: 2 / 1 / 3 / -1;
+    }
+
+    #medium_horizontal{
+      grid-area: 6 / 1 / 7 / 7;
+    }
+
+    #short_horizontal{
+      grid-area: 4 / 6 / 5 / -1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+</body>
+
+<div class="grid">
+  <div class="red_box"></div>
+  <div class="blue_box"></div>
+  <div class="yellow_box"></div>
+  <div class="black_box"></div>
+  <div class="grid_line" id="long_vertical"></div>
+  <div class="grid_line" id="medium_vertical"></div>
+  <div class="grid_line" id="short_vertical"></div>
+  <div class="grid_line" id="long_horizontal"></div>
+  <div class="grid_line" id="medium_horizontal"></div>
+  <div class="grid_line" id="short_horizontal"></div>
+</div>
+
+</html>
